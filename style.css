@@ -1,0 +1,121 @@
+
+body
+{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    display: flex;
+    width: 100%;
+}
+
+.sidebar
+{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    
+}
+
+.main
+{
+    width:70%;
+    height:100%;
+    background-color: rgba(250, 235, 215, 0.403);
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: repeat(3,350px);
+    gap:20px;
+}
+.add
+{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    margin-left:5rem;
+}
+
+.add-book
+{
+    font-weight: 800;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border:0;
+}
+
+.add-book:hover
+{
+    background-color: rgb(160, 160, 160);
+}
+
+
+.forms-hidden
+{
+    display:none;
+    margin-top: 30%;
+    margin-left:10%;
+}
+
+.forms-show
+{
+    opacity: 1;
+    display: flex;
+    border-radius: 10px;    
+}
+
+
+input
+{
+
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: black;
+    background-color: inherit;
+    font-size: clamp(5px,18px,30px);
+    border-width: 1px;
+}
+
+input:focus
+{
+    box-shadow: 1px 0px 20px inherit;
+    outline: none;
+    border-radius: 5px;
+    border: 2px green solid;
+    background-color: inherit;
+}
+
+
+#Submit
+{
+    background-color: royalblue;
+    border-radius: 10px;
+    border: 0px;
+    padding:10px 45px 10px 40px;
+    font-size:clamp(10px,18px,80px);
+    position:absolute;
+    top: 480px;
+}
+
+#Submit:hover
+{
+    border:green solid;
+    box-shadow: 1px 0px 20px rgb(103, 103, 6);
+
+    background-color: green;
+    color: white;
+}
+
+
+.card
+{
+    box-shadow: 0px 0px 10px 2px rgb(179, 179, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin:20px;
+    flex-direction: column;
+    border-radius:20px;
+}
